@@ -1,11 +1,20 @@
 # recursively input numbers till the number is negative
 
-num = int(input("Enter a non-zero number: "))
+n = float(input("Enter a number: "))
 
-def recursive(num):
+# def recursive(num):
+#     if num < 0:
+#         print("The number is negative.")
+#         return
+#     if num > 0:
+#         print("The number is positive.")
+#     return 
+
+
+def negative(num):
     if num < 0:
-        print("The number is negative.")
         return
-    if num > 0:
-        print("The number is positive.")
-    return 
+    num = float(input("Enter a number: "))
+    negative(num)
+
+negative(n)
